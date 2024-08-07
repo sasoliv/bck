@@ -16,7 +16,7 @@ alias ls='ls --color=auto'
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
-alias cdd='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+alias cdd='lf -last-dir-path $HOME/.config/lf/last-dir-path && cd $(cat $HOME/.config/lf/last-dir-path)'
 alias ll='exa -la --group --group-directories-first'
 alias catt='bat'
 alias vim=nvim
